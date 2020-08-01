@@ -1,0 +1,31 @@
+{% extends 'navigation.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+</head>
+{% block body %}
+<style>
+body {
+  background-color: hsla(89, 43%, 51%, 0.3);
+}
+</style>
+<body>
+	<div class="container" style="margin-top:50px;">
+	<h2 class="text-center">About us</h2>
+	<br><br><br><br>
+	<div class="row">
+		<div class="col-sm-4 text-center">
+			<img src="{% static 'images/aboutdoc.jpg' %}" width="300" height="200" class="img-responsive">
+		</div>
+		<div class="col-sm-8 font-weight-bold mt-5">
+		Hello....<br>
+		This is about Hospital Management Group Project using django framework. Here we described about no. of doctors patients and appointments and the details of all.....	
+		</div>
+		
+	</div>
+	</div>
+</body>
+{% endblock %}
+</html>
